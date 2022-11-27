@@ -34,6 +34,16 @@ public class SparkieClinicApp {
 
         System.out.println("Should expect to see a total amount due of 115 along with the individual Payments.");
         joe.getAllPaymentsDue();
+        System.out.println("\ngetAllPaymentsDue test complete---------------------------");
+        System.out.println("By invoking pay method on commonCold and putting an excess of 10 we should only see 0 not neg values\n");
+        checkForCommonCOld.pay(10000000000000.0);
+        System.out.println(checkForCommonCOld.displayAmountDue());
+        System.out.println("We should see an accurate balance if we only pay partial. In this case expect 2.5");
+        checkForCoolSticker.pay(2.5);
+        System.out.println(checkForCoolSticker.displayAmountDue());
+        System.out.println("Manipulating payment test complete ------------------------------");
+        System.out.println("Should see an accurate reflection on patient getAllPaymentsDue");
+        joe.getAllPaymentsDue();
 
     }
 }
