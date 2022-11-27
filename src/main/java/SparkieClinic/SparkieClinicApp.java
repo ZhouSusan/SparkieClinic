@@ -20,6 +20,9 @@ public class SparkieClinicApp {
                 "email: %s\n", joe.getName(), joe.getDateOfBirth(), joe.getSocialSecurityNumber(), joe.getAddress(), joe.getIllness(),
         joe.getPhoneNumber(), joe.getPhoneNumber(), joe.getEmail());
         System.out.println("-------------------Getter test complete\n");
-
+        System.out.println("Here is the patientInfoMethod. It should return a formated string with all the patient info.");
+        System.out.println(joe.patientInfo());
+        System.out.println("--------------------Patient info confirmed");
+        System.out.println("Should not throw an error when adding Payment instances to an insatnce of Patient");
     }
 }
