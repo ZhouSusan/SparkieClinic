@@ -51,4 +51,14 @@ public class Patient {
     public String getEmail() {
         return email;
     }
+
+    public void addPayment(Payment pay) {
+        payments.add(pay);
+    }
+
+    public String patientInfo() {
+        return "Patient's name: " + this.name + "\nSocial Security : " + this.socialSecurityNumber + "\nDOB: "
+                + this.dateOfBirth + "\nPhone#: " + this.phoneNumber + "\n address: " + this. address
+                + "\nIllness : " + this.illness;
+    }
 }
