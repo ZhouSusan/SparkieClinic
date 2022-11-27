@@ -24,5 +24,10 @@ public class SparkieClinicApp {
         System.out.println(joe.patientInfo());
         System.out.println("--------------------Patient info confirmed");
         System.out.println("Should not throw an error when adding Payment instances to an insatnce of Patient");
+        joe.addPayment(checkForMalaria);
+        joe.addPayment(checkForCommonCOld);
+        joe.addPayment(checkForCoolSticker);
+        System.out.println("-------------------Payments loaded successfully");
+
     }
 }
