@@ -1,7 +1,9 @@
 package SparkieClinic;
+import java.util.ArrayList;
 
 public class Patient {
 
+    private ArrayList<Payment> payments;
     private String name;
     private String dateOfBirth;
     private String socialSecurityNumber;
@@ -18,6 +20,8 @@ public class Patient {
         this.illness = illness;
         this.phoneNumber = phoneNumber;
         this.email = email;
+
+        this.payments = new ArrayList<Payment>();
     }
 
     public String getName() {
