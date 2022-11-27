@@ -24,10 +24,16 @@ public class SparkieClinicApp {
         System.out.println(joe.patientInfo());
         System.out.println("--------------------Patient info confirmed");
         System.out.println("Should not throw an error when adding Payment instances to an insatnce of Patient");
+        System.out.println("CheckForMalaria " + checkForMalaria.displayAmountDue());
         joe.addPayment(checkForMalaria);
+        System.out.println("checkForCommonCOld " + checkForCommonCOld.displayAmountDue());
         joe.addPayment(checkForCommonCOld);
+        System.out.println("CheckForCoolSticker " + checkForCoolSticker.displayAmountDue());
         joe.addPayment(checkForCoolSticker);
         System.out.println("-------------------Payments loaded successfully");
+
+        System.out.println("Should expect to see a total amount due of 115 along with the individual Payments.");
+        joe.getAllPaymentsDue();
 
     }
 }
