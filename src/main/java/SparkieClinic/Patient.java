@@ -68,7 +68,11 @@ public class Patient {
 
         double total = 0;
         for (Payment pay : payments) {
-            System.out.println(pay);
+            if (!pay.isPaid()) {
+                System.out.println(pay);
+                total += pay.getAmount();
+            }
         }
+        System.out.printf("Total amount due is %s", total);
     }
 }

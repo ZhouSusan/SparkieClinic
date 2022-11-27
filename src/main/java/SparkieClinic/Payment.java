@@ -18,7 +18,7 @@ public class Payment {
     public boolean isPaid() {
         return paid;
     }
-    
+
     public String displayAmountDue() {
         return "Date: " + this.date + ". The amount due is " +this.amount;
     }
