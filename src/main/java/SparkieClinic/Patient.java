@@ -69,7 +69,7 @@ public class Patient {
         double total = 0;
         for (Payment pay : payments) {
             if (!pay.isPaid()) {
-                System.out.println(pay);
+                System.out.println(pay.displayAmountDue());
                 total += pay.getAmount();
             }
         }
