@@ -61,4 +61,14 @@ public class Patient {
                 + this.dateOfBirth + "\nPhone#: " + this.phoneNumber + "\n address: " + this. address
                 + "\nIllness : " + this.illness;
     }
+
+    public void getAllPaymentsDue() {
+        System.out.printf("Patient: %s", this.name);
+        System.out.println("The following charges are your payments due: ");
+
+        double total = 0;
+        for (Payment pay : payments) {
+            System.out.println(pay);
+        }
+    }
 }
