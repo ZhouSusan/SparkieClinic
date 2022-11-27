@@ -19,4 +19,32 @@ public class Patient {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public String getSocialSecurityNumber() {
+        return socialSecurityNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getIllness() {
+        return illness;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
